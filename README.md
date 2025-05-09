@@ -136,30 +136,11 @@ python run_simulations.py --num_locations 10 --num_good 3 --num_bad 3 --num_beac
 - **information**: Information-seeking policy. Selects actions that maximize expected information gain (e.g., reduction in belief uncertainty).
 - **dpw**: POMCP with Double Progressive Widening (DPW). Enhances POMCP by controlling the branching factor in large or continuous action/observation spaces.
 
----
-
-## Testing
-
-All code is tested using **pytest**. To run tests:
-
-```bash
-pytest
-```
-
----
-
-## Code Style
-
-- Code style is enforced using [Ruff](https://github.com/astral-sh/ruff):
-  ```bash
-  ruff check .
-  ```
-- Please follow PEP257 for docstrings and PEP8 for code style.
 
 ---
 
 ## Notes
 - For advanced usage, see the docstrings in each script and policy class.
 - For reproducibility, always set the `--seed` argument.
-- **Note:** A few policies are implemented in the codebase but are not used in the main simulation scripts. You can explore or extend these policies as needed.
+- A few policies are implemented in the codebase but are not used in the main simulation scripts. You can explore or extend these policies as needed.
 - For questions or issues, please open an issue or consult the code documentation. 
